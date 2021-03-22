@@ -11,7 +11,17 @@ struct CardSetDetailsView: View {
     var cardSet: CardSet
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Edit") {
+
+            }
+            Button("Learn") {
+
+            }
+            Button("Delete") {
+
+            }
+        }
     }
 }
 

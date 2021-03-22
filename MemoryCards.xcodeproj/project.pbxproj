@@ -19,6 +19,7 @@
 		19FA826A2608F1540084D68C /* CardSetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA82692608F1540084D68C /* CardSetDetailsView.swift */; };
 		19FA826F2608F18E0084D68C /* CardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA826E2608F18E0084D68C /* CardSetMock.swift */; };
 		19FA82742608F1ED0084D68C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA82732608F1ED0084D68C /* String+Extensions.swift */; };
+		19FA827A2608F5780084D68C /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA82792608F5780084D68C /* LearnView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		19FA82692608F1540084D68C /* CardSetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetDetailsView.swift; sourceTree = "<group>"; };
 		19FA826E2608F18E0084D68C /* CardSetMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetMock.swift; sourceTree = "<group>"; };
 		19FA82732608F1ED0084D68C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		19FA82792608F5780084D68C /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,9 @@
 		198678642608BE21006E9E4A /* MemoryCards */ = {
 			isa = PBXGroup;
 			children = (
+				19FA82772608F5450084D68C /* Screens */,
 				19FA82722608F1E20084D68C /* Extensions */,
 				19FA826D2608F1840084D68C /* Mocks */,
-				19FA82682608F1110084D68C /* CardSetDetails */,
-				1986788A2608EF0D006E9E4A /* Home */,
 				1986787E2608BF08006E9E4A /* Models */,
 				198678652608BE21006E9E4A /* MemoryCardsApp.swift */,
 				198678692608BE25006E9E4A /* Assets.xcassets */,
@@ -139,6 +140,24 @@
 				19FA82732608F1ED0084D68C /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19FA82772608F5450084D68C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1986788A2608EF0D006E9E4A /* Home */,
+				19FA82682608F1110084D68C /* CardSetDetails */,
+				19FA82782608F5540084D68C /* Learn */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		19FA82782608F5540084D68C /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				19FA82792608F5780084D68C /* LearnView.swift */,
+			);
+			path = Learn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +232,7 @@
 				19FA82742608F1ED0084D68C /* String+Extensions.swift in Sources */,
 				1986786F2608BE25006E9E4A /* Persistence.swift in Sources */,
 				198678882608D189006E9E4A /* CardSetView.swift in Sources */,
+				19FA827A2608F5780084D68C /* LearnView.swift in Sources */,
 				19FA826A2608F1540084D68C /* CardSetDetailsView.swift in Sources */,
 				198678722608BE25006E9E4A /* MemoryCards.xcdatamodeld in Sources */,
 				19FA826F2608F18E0084D68C /* CardSetMock.swift in Sources */,
