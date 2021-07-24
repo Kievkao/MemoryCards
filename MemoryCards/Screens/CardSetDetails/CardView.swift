@@ -17,16 +17,16 @@ struct CardView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white)
-                .shadow(radius: 5)
+            RoundedCardView(style: .card)
             VStack {
                 Text(mode == .front ? card.front : card.back)
-                    .font(.headline)
-                    .rotation3DEffect(.degrees(mode == .front ? 0 : 180), axis: (x: 0.0, y: 1.0, z: 0.0)
+                    .font(.largeTitle)
+                    .rotation3DEffect(
+                        .degrees(mode == .front ? 0 : 180),
+                        axis: (x: 0.0, y: 1.0, z: 0.0)
                     )
             }
-        }.frame(width: 280, height: 280)
+        }
     }
 }
 

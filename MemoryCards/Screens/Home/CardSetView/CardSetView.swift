@@ -12,9 +12,7 @@ struct CardSetView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white)
-                .shadow(radius: 5)
+            RoundedCardView(style: .cardSet)
             cardSet.image.map {
                 Image(uiImage: $0)
             }
@@ -27,7 +25,11 @@ struct CardSetView: View {
                 }
                 Spacer()
             }.padding(.top, 12)
-        }.frame(width: 100, height: 100)
+        }.frame(
+            width: RoundedCardView.Style.cardSet.size,
+            height: RoundedCardView.Style.cardSet.size,
+            alignment: .center
+        )
     }
 }
 

@@ -10,13 +10,16 @@ import SwiftUI
 struct AddCardView: View {
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(Color.white)
-                .shadow(radius: 5)
+            RoundedCardView(style: .card)
             Image.init(systemName: "plus")
                 .resizable()
                 .padding(70)
-        }.frame(width: 280, height: 280)
+                .frame(
+                    width: RoundedCardView.Style.card.size,
+                    height: RoundedCardView.Style.card.size,
+                    alignment: .center
+                )
+        }
     }
 }
 
