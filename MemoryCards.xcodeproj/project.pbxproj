@@ -21,6 +21,7 @@
 		19FA82742608F1ED0084D68C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA82732608F1ED0084D68C /* String+Extensions.swift */; };
 		19FA827A2608F5780084D68C /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FA82792608F5780084D68C /* LearnView.swift */; };
 		3E97831D26AC5421001F4A3D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97831C26AC5421001F4A3D /* CardView.swift */; };
+		3E97831F26AC5F73001F4A3D /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97831E26AC5F73001F4A3D /* AddCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3E85352826A96DD500C65C06 /* SwiftGenKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftGenKit.xcframework; path = Carthage/Build/SwiftGenKit.xcframework; sourceTree = "<group>"; };
 		3E85352F26A96F2A00C65C06 /* SwiftGenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGenKit.framework; path = Carthage/Build/Mac/SwiftGenKit.framework; sourceTree = "<group>"; };
 		3E97831C26AC5421001F4A3D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3E97831E26AC5F73001F4A3D /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				19FA82692608F1540084D68C /* CardSetDetailsView.swift */,
 				3E97831C26AC5421001F4A3D /* CardView.swift */,
+				3E97831E26AC5F73001F4A3D /* AddCardView.swift */,
 			);
 			path = CardSetDetails;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				19FA826A2608F1540084D68C /* CardSetDetailsView.swift in Sources */,
 				198678722608BE25006E9E4A /* MemoryCards.xcdatamodeld in Sources */,
 				19FA826F2608F18E0084D68C /* CardSetMock.swift in Sources */,
+				3E97831F26AC5F73001F4A3D /* AddCardView.swift in Sources */,
 				198678802608BF32006E9E4A /* Card.swift in Sources */,
 				1986787B2608BEA4006E9E4A /* HomeView.swift in Sources */,
 				198678842608BF6C006E9E4A /* CardSet.swift in Sources */,

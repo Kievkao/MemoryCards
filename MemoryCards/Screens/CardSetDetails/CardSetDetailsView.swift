@@ -28,21 +28,25 @@ struct CardSetDetailsView: View {
             }
             TabView {
                 ForEach(cardSet.cards, id: \.self) { card in
-                    CardView(card: card, mode: flippedCards.contains(card) ? .back : .front)
-                        .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
-                        .onTapGesture {
-                            withAnimation {
-                                degrees = degrees == 0 ? 180 : 0
-                                if flippedCards.contains(card) {
-                                    flippedCards.remove(card)
-                                } else {
-                                    flippedCards.insert(card)
-                                }
-                            }
+                    cardView(from: card)
+                }
+                AddCardView()
+            }.tabViewStyle(PageTabViewStyle())
+        }
+    }
+    
+    func cardView(from card: Card) -> some View {
+        return CardView(card: card, mode: flippedCards.contains(card) ? .back : .front)
+            .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
+            .onTapGesture {
+                withAnimation {
+                    degrees = degrees == 0 ? 180 : 0
+                    if flippedCards.contains(card) {
+                        flippedCards.remove(card)
+                    } else {
+                        flippedCards.insert(card)
                     }
                 }
-                CardSetView(cardSet: CardSet.new())
-            }.tabViewStyle(PageTabViewStyle())
         }
     }
 }
