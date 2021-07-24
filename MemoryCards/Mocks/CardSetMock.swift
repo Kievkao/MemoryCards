@@ -12,6 +12,7 @@ extension CardSet {
         return CardSet(
             name: String.random(length: 5),
             description: String.random(length: 10),
+            image: nil,
             cards: [Card.mock(), Card.mock(), Card.mock(), Card.mock(), Card.mock(), Card.mock(), Card.mock(), Card.mock()]
         )
     }
